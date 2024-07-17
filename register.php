@@ -57,7 +57,7 @@ require 'vendor/autoload.php';
                         //Content
                         $mail->isHTML(true);                                  //Set email format to HTML
                         $mail->Subject = 'No reply';
-                        $mail->Body    = 'Here is the verification link <b><a href="http://localhost/login/?verification='.$code.'">http://localhost/login/?verification='.$code.'</a></b>';
+                        $mail->Body    = 'Here is the verification link <b><a href="http://192.168.4.128/?verification='.$code.'">http://192.168.4.128/?verification='.$code.'</a></b>';
                         
                         $mail->send();
                         echo 'Message has been sent';
